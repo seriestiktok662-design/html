@@ -14,16 +14,16 @@
       <nav>
         <ul>
           <li>
-            <a href="">Início</a>
+            <a href="#hero">Início</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="">Instrumentos</a>
+            <a href="#instrumentos">Instrumentos</a>
           </li>
           <li>
-            <a href="">Depoimentos</a>
+            <a href="#depoimentos">Depoimentos</a>
           </li>
           <li>
             <a href="">Contato</a>
@@ -33,7 +33,124 @@
     </header>
 
     <!--Conteúdo Principal-->
-    <main>Conteúdo Principal</main>
+    <main>
+      <section id="hero">
+        <h2>O som da sua vida começa aqui</h2>
+        <p>Encontre as melhores marcas de violinos, trompetes ou violões</p>
+        <img
+          src="bandarock.jpg"
+          alt="Banda de Rock num show usando os instrumentos musicais do Compasso Musical"
+          width="450"
+        />
+        <br /><br />
+        <a href="">Ver nossas ofertas</a>
+      </section>
+
+      <!--Seção Sobre-->
+      <section id="sobre">
+        <h2>Sobre a Compasso Musical</h2>
+        <p>
+          Nossa loja nasceu da paixão pela música. Nossa missão é entregar
+          qualidade sonora tanto para quem está aprendendo os primeiros acordes
+          quanto para músicos profissionais.
+        </p>
+        <ul>
+          <li>Todos os instrumentos são revisados por nossa equipe técnica</li>
+          <li>Garantia estendida de fábrica</li>
+          <li>Suporte e atendimento feito por músicos reais.</li>
+        </ul>
+      </section>
+
+      <!--Instrumentos-->
+      <section id="instrumentos"></section>
+      <h2>Cátalogo</h2>
+      <article>
+        <h3>Guitarra Elétrica StratoCaster</h3>
+        <img
+          src="https://images.unsplash.com/photo-1564186763535-ebb21ef5277f"
+          alt="Imagem da Guitarra Elétrica StratoCaster"
+          width="450"
+        />
+        <p><strong>Marca: </strong>Fender</p>
+        <p>Guitarra clássica de alta performance, ideal para rock e blues.</p>
+        <p>
+          <em>Preço: 3.500,00</em>
+        </p>
+        <a href="#">Adicionar ao carrinho</a>
+      </article>
+      <article>
+        <h3>Kit Bateria</h3>
+        <img
+          src="https://images.unsplash.com/photo-1663072166730-68d2ed276f6f"
+          alt="Imagem do Kit de Bateria"
+          width="450"
+        />
+        <p><strong>Marca: </strong>Evans</p>
+        <p>Kit de Bateria com textura amadeirada ideal para você</p>
+        <p>
+          <em>Preço: 17.500,00</em>
+        </p>
+        <a href="#">Adicionar ao carrinho</a>
+      </article>
+    </section>
+
+    <!-- Seção Depoimentos-->
+     <section id="Depoimentos">
+      <h2>O que nossos clientes dizem</h2>
+      <blockquote>
+        <p>
+          "A bateria chegou super rápido aqui em Cuiabá-MT e perfeitamente embalada. O som é incrível"
+        </p>
+        <footer>
+          - <cite>Davi Fonseca, Baterista</cite>
+        </footer>
+      </blockquote>
+      <br>
+      <blockquote>
+        <p>
+          "Comprei minha primeira Guitarra na Compasso Musical. O atendimento me ajudou a escolher o modelo certo!"
+        </p>
+        <footer>
+          - <cite>Adriano Guedez, Estudante de Música</cite>
+        </footer>
+      </blockquote>
+      </section>
+
+      <!-- Seção Contatos-->
+       <section id="contatos">
+        <h2>Fale Conosco</h2>
+        <p>Tem dúvidas sobre algum instrumento? Mande uma mensagem ou venha nos visitar.</p>
+        <address>
+          <p>
+            Loja Física: <strong>Centro Histórico, Cuiabá-MT</strong>
+          </p>
+        </address>
+        <form action="#">
+          <label for="nome">Nome Completo:</label>
+          <br>
+          <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+          <br><br>
+          <label for="e-mail">E-mail</label>
+          <br>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+          <br><br>
+          <label for="departamento">Departamento</label>
+          <br>
+          <select name="departamento" id="departamento">
+            <option value="Vendas">Vendas</option>
+            <option value="Suporte">Suporte Técnico</option>
+            <option value="Financeiro">Financeiro</option>
+            <option value="Sugestao">Sugestões</option>
+          </select>
+            <br><br>
+            <label for="mensagem">Mensagem</label>
+            <br>
+            <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <br><br>
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+       </section>
+    </main>
 
     <!--Rodapé do Site-->
     <footer>
@@ -46,16 +163,16 @@
         <h3>Mapa do Site</h3>
         <ul>
           <li>
-            <a href="">Início</a>
+            <a href="#hero">Início</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="">Instrumentos</a>
+            <a href="#instrumentos">Instrumentos</a>
           </li>
           <li>
-            <a href="">Depoimentos</a>
+            <a href="#depoimentos">Depoimentos</a>
           </li>
           <li>
             <a href="">Contato</a>
@@ -95,18 +212,22 @@
 
       <div>
         <h3>Newsletter</h3>
-        <p>
-            Receba promoções exclusivas no seu e-mail
-        </p>
+        <p>Receba promoções exclusivas no seu e-mail</p>
         <form action="">
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-            <button type="submit">Assinar</button>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+          />
+          <button type="submit">Assinar</button>
         </form>
       </div>
 
       <div>
         <p>
-            Copyright &copy; 2026 Compasso Musical - Todos os direitos reservados. Site desenvolvido por Davi Fonseca
+          Copyright &copy; 2026 Compasso Musical - Todos os direitos reservados.
+          Site desenvolvido por Davi Fonseca
         </p>
       </div>
     </footer>
